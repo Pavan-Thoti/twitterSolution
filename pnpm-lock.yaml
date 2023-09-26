@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   bcrypt: 5.0.1
   express: 4.17.1
+  express.js: ^1.0.0
   jsonwebtoken: 8.5.1
   nodemon: 2.0.7
   sqlite: 4.0.19
@@ -11,6 +12,7 @@ specifiers:
 dependencies:
   bcrypt: 5.0.1
   express: 4.17.1
+  express.js: 1.0.0
   jsonwebtoken: 8.5.1
   nodemon: 2.0.7
   sqlite: 4.0.19
@@ -542,6 +544,12 @@ packages:
   /etag/1.8.1:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
+    dev: false
+
+  /express.js/1.0.0:
+    resolution: {integrity: sha512-zwgAG41IaAIxIHIp4dYZVasTF4GgMlUOxA0f+PpJNIcednzDaFo6pY86PXOnoEhAq1i5ooXYRw650Iggb+tkWQ==}
+    dependencies:
+      express: 4.17.1
     dev: false
 
   /express/4.17.1:
