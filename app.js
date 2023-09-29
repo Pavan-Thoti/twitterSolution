@@ -30,22 +30,22 @@ const initializeDBAndServer = async () => {
 initializeDBAndServer();
 
 //getting array of user following ID s 
+let pavan;
 
 const getFollowingPeopleIdsOfUser=async(username)={
-    const pavan=`
+    const pavan =`
     SELECT 
        following_user_id FROM follower 
     INNER JOIN user ON user.user_id=follower.follower_user_id
-    WHERE user.username="${username}";
-    `;
-
+    WHERE user.username="${username}";`;
+    
     const followingPeople=await db.all(pavan);
     const arrayOfIds=followingPeople.map(
-        (eachUser)=>eachUser.following_user_id
+        (eachUser)=>eachUser.following_user_id  
     );
 
   return arrayOfIds;
-}
+};
 
 //jwtTokenVerification
 const authenticateToken = (request, response, next) => {
